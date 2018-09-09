@@ -1,0 +1,112 @@
+$colorPurple: #292B73
+$colorYellow: #FFB637
+*
+  // border: 1px solid #000
+  font-family: 'Noto Sans TC', sans-serif
+
+html,body
+  height: 100%
+  width: 100%
+  margin: 0
+body
+  box-sizing: border-box
+  // 如果單純用padding: 100px，內距會被算在寬度之外->要加box-sizing: border-box
+  background-color: $colorPurple
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  
+.panels
+  display: flex
+  width: 100%
+  max-width: 900px
+  position: relative
+  z-index: 1
+.panel
+  flex: 5
+  padding: 30px
+  background-color: #fff
+  color: $colorPurple
+  box-shadow: 0px 0px 30px rgba(black,0.2)
+  border-radius: 5px
+  
+  &.yellow
+    flex: 4
+    background-color: $colorYellow
+  
+h1,h3
+  margin: 0
+  text-align: center
+h1
+  font-weight: 700
+  margin-bottom: 30px 
+h3
+  font-weight: 400
+textarea
+  width: 100%
+  padding: 10px
+  box-sizing: border-box
+  font-size: 20px
+  letter-spacing: 1px
+  outline: none
+  // 預設是點下去會有藍框框->outline: none取消掉
+  border: solid 2px rgba(black,0.2)
+  &:focus
+    // 當輸入框正在被輸入時
+    border-color: $colorPurple
+  
+.buttons
+  display: flex
+  justify-content: center
+  margin-top: 30px
+button
+  padding: 10px 20px
+  border-radius: 0px
+  margin: 6px
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 3px
+  border: none
+  &.yellow
+    background-color: $colorYellow
+  &.purple
+    background-color: $colorPurple
+    color: white
+  &.white
+    
+.symbol
+  font-size: 24px
+  text-align: center
+  font-weight: 900
+hr
+  border: none
+  border-bottom: 3px solid $colorPurple
+  
+.translist
+  display: flex
+  flex-direction: column
+  height: 450px
+  flex-wrap: wrap
+  // flex-wrap: wrap超出要綁回來
+  li
+    margin-bottom: 5px
+    font-size: 18px
+    width: 30%
+    
+    
+
+.decoration
+  font-size: 400PX
+  color: white
+  position: absolute
+  font-weight: 900
+  opacity: 0.1
+  transform: rotate(30deg)
+  
+.playlist
+  font-size: 20px
+  text-align: center
+  height: 20px
+  .playing
+    color: $colorYellow

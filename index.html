@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title><Project 3> 做一個摩斯密碼翻譯器</title>
+  
+  
+  <link rel='stylesheet' href='http://fonts.googleapis.com/earlyaccess/notosanstc.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div class="panels">
+  <div class="panel">
+    <h3>Morse Code Translation</h3>
+    <h1>摩斯密碼翻譯器</h1>
+    <textarea id="input" rows="4" placeholder="輸入英文">MORSECODE</textarea>
+    <div class="symbol">⇵</div>
+    <textarea id="output" rows="4" placeholder="輸入密碼"></textarea>
+    <div class="playlist"></div>
+    <div class="buttons">
+      <button class="purple" id="btnMorse">翻譯密碼</button>
+      <button class="yellow" id="btnEng">翻回英文</button>
+      <button class="white" id="btnPlay">播放聲音</button>
+      <audio class="short" src="http://2017.awiclass.monoame.com/audio/morse/short.mp3">
+        <audio class="long" src="http://2017.awiclass.monoame.com/audio/morse/long.mp3"></audio>
+      </audio>
+    </div>
+  </div>
+  <div class="panel yellow">
+    <h3>翻譯清單</h3>
+    <hr/>
+    <ul class="translist"></ul>
+  </div>
+</div>
+<div class="decoration">MORSE CODE</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

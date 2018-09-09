@@ -1,0 +1,24 @@
+.panels
+  .panel
+    h3 Morse Code Translation
+    h1 摩斯密碼翻譯器
+    textarea#input(rows="4",placeholder="輸入英文") MORSECODE
+    //- rows="4":讓他預設是4行高
+    //- placeholder:提示字
+    //- 符號可以搜尋char arrow->他是unicode
+    .symbol ⇵
+    textarea#output(rows="4",placeholder="輸入密碼")
+    .playlist
+    .buttons
+      button.purple#btnMorse 翻譯密碼
+      button.yellow#btnEng 翻回英文
+      button.white#btnPlay 播放聲音
+      audio.short(src="http://2017.awiclass.monoame.com/audio/morse/short.mp3")
+       audio.long(src="http://2017.awiclass.monoame.com/audio/morse/long.mp3")
+  .panel.yellow
+    h3 翻譯清單
+    hr
+    ul.translist
+.decoration MORSE CODE
+
+  
